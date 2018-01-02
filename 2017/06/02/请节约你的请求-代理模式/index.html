@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 我的个人博客</title>
+  <title>请节约你的请求-代理模式 | 我的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="我的个人博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="What’s the proxy pattern?代理模式其实就是将违反单一性原则的类给抽离出来，尽量满足开放和封闭的原则。 相当于一个类的行为只是一种，但是你可以给这个类添加额外的行为。比如: 一个工厂制造伞，你可以给这个工厂设置一个代理，提供订单，运货，淘宝网店等多种行为。当然，里面还有最关键的一点就是，这个代理能把一些骗纸和忽悠都过滤掉，将最真实最直接的订单给工厂，让工厂能够放心的让工人加班">
+<meta property="og:type" content="article">
+<meta property="og:title" content="请节约你的请求-代理模式">
+<meta property="og:url" content="http://yoursite.com/2017/06/02/请节约你的请求-代理模式/index.html">
 <meta property="og:site_name" content="我的个人博客">
+<meta property="og:description" content="What’s the proxy pattern?代理模式其实就是将违反单一性原则的类给抽离出来，尽量满足开放和封闭的原则。 相当于一个类的行为只是一种，但是你可以给这个类添加额外的行为。比如: 一个工厂制造伞，你可以给这个工厂设置一个代理，提供订单，运货，淘宝网店等多种行为。当然，里面还有最关键的一点就是，这个代理能把一些骗纸和忽悠都过滤掉，将最真实最直接的订单给工厂，让工厂能够放心的让工人加班">
+<meta property="og:updated_time" content="2018-01-02T08:09:41.938Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的个人博客">
+<meta name="twitter:title" content="请节约你的请求-代理模式">
+<meta name="twitter:description" content="What’s the proxy pattern?代理模式其实就是将违反单一性原则的类给抽离出来，尽量满足开放和封闭的原则。 相当于一个类的行为只是一种，但是你可以给这个类添加额外的行为。比如: 一个工厂制造伞，你可以给这个工厂设置一个代理，提供订单，运货，淘宝网店等多种行为。当然，里面还有最关键的一点就是，这个代理能把一些骗纸和忽悠都过滤掉，将最真实最直接的订单给工厂，让工厂能够放心的让工人加班">
   
     <link rel="alternative" href="/atom.xml" title="我的个人博客" type="application/atom+xml">
   
@@ -149,76 +153,178 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-请节约你的请求-代理模式" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/08/js中的一对多-订阅发布模式/" class="archive-article-date">
-  	<time datetime="2017-06-08T05:04:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-08</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/08/js中的一对多-订阅发布模式/">订阅发布模式</a>
+    <h1 class="article-title" itemprop="name">
+      请节约你的请求-代理模式
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/02/请节约你的请求-代理模式/" class="archive-article-date">
+        
+        <a href="/2017/06/02/请节约你的请求-代理模式/" class="archive-article-date">
   	<time datetime="2017-06-02T05:04:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-02</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/02/请节约你的请求-代理模式/">请节约你的请求-代理模式</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="What’s-the-proxy-pattern"><a href="#What’s-the-proxy-pattern" class="headerlink" title="What’s the proxy pattern?"></a>What’s the proxy pattern?</h1><p>代理模式其实就是将违反单一性原则的类给抽离出来，尽量满足开放和封闭的原则。 相当于一个类的行为只是一种，但是你可以给这个类添加额外的行为。比如: 一个工厂制造伞，你可以给这个工厂设置一个代理，提供订单，运货，淘宝网店等多种行为。当然，里面还有最关键的一点就是，这个代理能把一些骗纸和忽悠都过滤掉，将最真实最直接的订单给工厂，让工厂能够放心的让工人加班，顺利的发年终奖. !!!说人话: 就是将你的本体请求，放在代理的怀抱里，让他来帮你挡风挡雨。</p>
+<h1 id="图片懒加载"><a href="#图片懒加载" class="headerlink" title="图片懒加载"></a>图片懒加载</h1><p>图片懒加载是指，图片的加载应该在页面全部加载完后，再去加载。这样能够提高加载的速度和网页的体验性。实际操作就是，将原来网页的src独立出来，将原来图片使用一个loading.gif代替，然后在js里面手动创建个img去加载这个src，当加载完后把src替换就可以了。 没有使用代理模式时</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var delayload = (<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">    var img = document.querySelector(<span class="string">"#img"</span>);</span><br><span class="line">    img.src = <span class="string">"loading.gif"</span>;</span><br><span class="line">    var newImg = document.createElement(<span class="string">"img"</span>);</span><br><span class="line">    newImg.onload = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        img.src = newImg.src;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> <span class="keyword">function</span>(src)&#123;</span><br><span class="line">        newImg.src = src;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br><span class="line">window.onload = ()=&gt;&#123;delayload(<span class="string">"jimmy.jpg"</span>)&#125;;</span><br></pre></td></tr></table></figure>
+<p>这样写，我给满分(在没有产经这个生物的前提下). 现在，假设有一个初级产经(还没有进化那种) 她有一个需求: 我不要你的这个loading.gif图片，你换一个。 恩，好没问题。 (不过就是换一下src而已) 她又有一个需求: 你弄一个纯色的背景吧~. MD~ 搞什么，你这样我很为难诶，我逻辑都变了，你让我怎么改。。 在没有使用代理模式的情况下，你的改动应该是:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var delayload = (<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">    var img = document.querySelector(<span class="string">"#img"</span>);</span><br><span class="line">    img.style.backgoundColor=<span class="string">"red"</span>;</span><br><span class="line">    var newImg = document.createElement(<span class="string">"img"</span>);</span><br><span class="line">    newImg.onload = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        img.src = newImg.src;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> <span class="keyword">function</span>(src)&#123;</span><br><span class="line">        newImg.src = src;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure></p>
+<p>这就直接改动代码，破坏了开放封闭原则，添加功能时，下下策就是改动函数内部代码。 所以，为了应对产经这个神奇的物种，以及能写出一手好代码，推荐使用代理模式这个利器. 来,上利器<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">//将背景图设置，和图片加载的src修改分开</span><br><span class="line">var delayload = (<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">    var img = document.querySelector(<span class="string">"#img"</span>);</span><br><span class="line">    <span class="built_in">return</span> &#123;</span><br><span class="line">        setSrc:<span class="keyword">function</span>(src)&#123;</span><br><span class="line">            img.src = src;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br><span class="line">var proxy = (<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">    var img = document.createElement(<span class="string">'img'</span>);</span><br><span class="line">    delayload.setSrc(<span class="string">"loading.gif"</span>);</span><br><span class="line">    img.onload = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        delayload.setSrc(img.src);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> &#123;</span><br><span class="line">        setSrc:<span class="keyword">function</span>(src)&#123;</span><br><span class="line">            img.src = src;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br><span class="line">proxy.setSrc(<span class="string">"jimmy.jpg"</span>);</span><br></pre></td></tr></table></figure></p>
+<p>恩，如果产经要求换图片，好解决，换一下loading.gif就over了.如果产经要求换成纯色的。也行。 再加一个方法.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">var delayload = (<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">    var img = document.querySelector(<span class="string">"#img"</span>);</span><br><span class="line">    <span class="built_in">return</span> &#123;</span><br><span class="line">        setSrc:<span class="keyword">function</span>(src)&#123;</span><br><span class="line">            img.src = src;</span><br><span class="line">        &#125;,</span><br><span class="line">        setBg:<span class="keyword">function</span>(color)&#123;</span><br><span class="line">            img.style.backgroundColor = color;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br><span class="line">var proxy = (<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">    var img = document.createElement(<span class="string">'img'</span>);</span><br><span class="line">    delayload.setBg(<span class="string">"red"</span>);  //只需要替换这一句</span><br><span class="line">    img.onload = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        delayload.setSrc(img.src);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> &#123;</span><br><span class="line">        setSrc:<span class="keyword">function</span>(src)&#123;</span><br><span class="line">            img.src = src;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br><span class="line">proxy.setSrc(<span class="string">"jimmy.jpg"</span>);</span><br></pre></td></tr></table></figure></p>
+<p>使用代理就可以在，最大限度降低代码改动的情况下，完成需求。 当然， 如果有一天神奇生物又提出一个需求: 亲，我们现在宽带升级了，有100M了诶，你可以把加载去掉了吧，直接让用户一下就用看见图片了哦。 (呵呵~我丢你雷姆) 没事，谁叫我有代理模式嘞。改~ 神奇的事发生了.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">var proxy = (<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">    var img = document.createElement(<span class="string">'img'</span>);</span><br><span class="line">    //删除~</span><br><span class="line">    img.onload = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        delayload.setSrc(img.src);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> &#123;</span><br><span class="line">        setSrc:<span class="keyword">function</span>(src)&#123;</span><br><span class="line">            img.src = src;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br><span class="line">proxy.setSrc(<span class="string">"jimmy.jpg"</span>);</span><br></pre></td></tr></table></figure></p>
+<p>仔细观察就可以发现，我接口没改，对象没动，只是将<strong>delayload.setBg(“red”)</strong>删除了。 加载功能还在，只是我使用代理传了一层。66666 ##代理的一致性 通常来说，代理其实就是本体的一个影子，我有的行为你应该都有，我能sit，代理也能sit. 所以为了不让用于迷惑，这里有一个需求就是，代理的接口名应该和本体的接口名一致，就和上面的setSrc一样. 但通常这是个主要是针对java的静态语言的要求。因为在js里面没有实现接口的继承，而且在js里面,函数是名副其实的一等公民,所以这里对于代理的一直性要求就没有这么高了。 上面其实可以改写为:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">var setImg = (<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">     var img = document.querySelector(<span class="string">"#img"</span>);</span><br><span class="line">    <span class="built_in">return</span> <span class="keyword">function</span>(src)&#123;</span><br><span class="line">        img.src = src;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br><span class="line">var proxyImg = (<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">    var newImg = document.createElement(<span class="string">"img"</span>);</span><br><span class="line">    setImg(<span class="string">"loading.gif"</span>);</span><br><span class="line">    newImg.onload = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        setImg(newImg.src);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> <span class="keyword">function</span>(src)&#123;   </span><br><span class="line">        newImg.src = <span class="string">"jimmy.jpg"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">proxyImg(<span class="string">"test.jpg"</span>);</span><br></pre></td></tr></table></figure></p>
+<p>但本人推荐上面那种使用接口的形式，这样拓展性比较强，而且易于复用.</p>
+<h1 id="保护代理和虚拟代理"><a href="#保护代理和虚拟代理" class="headerlink" title="保护代理和虚拟代理"></a>保护代理和虚拟代理</h1><p>这其实很好理解，保护代理就是起到保护作用，用来过滤掉一下不必要的请求，将真正需要的递给本体。 虚拟代理和函数节流的思想是一样的，将用户对性能的rape的伤害降低到最低。就像送快递一样，一件一件的送，这个公司是不是傻~ 所以为了生存，快递公司会当物品积攒到一定程度后才会让快递哥骑着小电驴穿梭在神州大地上。 保护代理</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">//譬如，验证用户名是否唯一</span><br><span class="line">//这里我们应用，保护代理的思想，如果用户名是不合法的，则不会将该请求给本体执行</span><br><span class="line">var checkUser = <span class="keyword">function</span>(name)&#123;</span><br><span class="line">    $.ajax(&#123;</span><br><span class="line">        url:<span class="string">"xxxxx"</span>,</span><br><span class="line">        <span class="built_in">type</span>:<span class="string">"POST"</span>,</span><br><span class="line">        contentType:<span class="string">"application/json"</span>,</span><br><span class="line">        data:JSON.stringify(&#123;</span><br><span class="line">            name:name  //用户名</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line">var proxy = (<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">    var user = document.querySelector(<span class="string">"#username"</span>);</span><br><span class="line">    <span class="built_in">return</span> <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        var userName = user.value;</span><br><span class="line">        var errMsg = detect(userName,[<span class="string">"NotEmpty"</span>,<span class="string">"isUserName"</span>]);  //利用策略模式，验证.</span><br><span class="line">        <span class="keyword">if</span>(errMsg)&#123;</span><br><span class="line">            console.log(errMsg);</span><br><span class="line">            <span class="built_in">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        checkUser(userName);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+<p>可以清楚的看到，如果你的用户名格式不正确，这个请求是不会达到本体的。直接会在proxy里面被拦截掉。所以一个很好的代理(保护代理)，能让你的请求100%用在刀刃上。 虚拟代理 上面的保护代理阐述了怎样去拒绝请求，而虚拟代理的原则是收集请求(来者不拒). 他的出发点和保护代理的是一样的，都是为了节省请求的开支。 比如: 一个在线的编辑器，他是怎样同步你的内容呢？不会是，你内容一改变就发送一起请求同步吧。这个想法显然不切实际。如果这样，我每天没事都会打开这个编辑器，把asfdsafdsafsad…在里面敲上几分钟。保证分分钟弄死他的服务器。所以一般，我们会使用虚拟代理来接受你的请求。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">var send = <span class="keyword">function</span>(article) &#123;</span><br><span class="line">    <span class="built_in">return</span> $.ajax(&#123;</span><br><span class="line">        url: xxx,</span><br><span class="line">        <span class="built_in">type</span>: <span class="string">"POST"</span>,</span><br><span class="line">        contentType: <span class="string">"text/plain"</span>,</span><br><span class="line">        data: article</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line">var proxy = (<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">    var content = document.querySelector(<span class="string">'#article'</span>),</span><br><span class="line">        timer;</span><br><span class="line">    <span class="built_in">return</span> <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">        var article = content.value;</span><br><span class="line">        <span class="keyword">if</span> (timer) &#123; //不覆盖已经发送的请求</span><br><span class="line">            <span class="built_in">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        timer = setTimeout(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">            send(article)</span><br><span class="line">                .<span class="keyword">then</span>(<span class="function"><span class="title">function</span></span>() &#123;  //执行完成再处理</span><br><span class="line">                    clearTimeout(timer);</span><br><span class="line">                    timer = null;</span><br><span class="line">                &#125;)</span><br><span class="line"></span><br><span class="line">        &#125;, 2000);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br><span class="line">setTimeout(<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">    proxy();</span><br><span class="line">&#125;,2000); //定时发送请求</span><br></pre></td></tr></table></figure>
+<p>就算你手速再快，我就只能2s发一次。 但这只是一个比较简单的实例。如果大家感兴趣可以研究一下，作业部落这个编辑器，他这个markdown同步和体验交互式我迄今为止用过应该算最好的一个了吧~</p>
+<h1 id="缓存代理"><a href="#缓存代理" class="headerlink" title="缓存代理"></a>缓存代理</h1><p>这个应该是应用最多的一个代理方式了，这种方式能够真正解决运算时间问题，网络不畅问题，离线问题。 搬一个例子过来吧。 计算乘积问题</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> fb(num)&#123;  //斐波那契函数,超级耗内存</span><br><span class="line">    <span class="keyword">if</span>(num&lt;=1)&#123;</span><br><span class="line">        <span class="built_in">return</span> 1;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> num*fb(--num)</span><br><span class="line">&#125;</span><br><span class="line">//缓存代理出场了</span><br><span class="line">var cProxy = (<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">    var cache = &#123;&#125;;</span><br><span class="line">    <span class="built_in">return</span> <span class="keyword">function</span>(num)&#123;</span><br><span class="line">        <span class="keyword">if</span>(cache[num])&#123;</span><br><span class="line">          console.log(`this is cache <span class="variable">$&#123;cache[num]&#125;</span>`);</span><br><span class="line">            <span class="built_in">return</span> cache[num];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> cache[num] = fb(num);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br><span class="line">//测试</span><br><span class="line">console.log(cProxy(4));  //24</span><br><span class="line">cProxy(4);  //<span class="string">"this is cache 24"</span></span><br></pre></td></tr></table></figure>
+<p>恩，完美。 我们知道阶乘是比较累的一个计算方法，如果某天你的leader需要你计算很多次fb(2000)。用户的电脑也吃不消啊，所以为了体验，缓存代理是你百分百女友，好好珍惜。 当然，缓存代理并不只有这一点用途，比如需要重复获取网页中大部分数据的时候，就可以考虑使用缓存代理。前端工作者，99.9999%的应该都会遇见分页的问题(请不要告诉我你的分页是同步方式). 当我们点击一个页面的时候，获取后台的数据，然后再由我恩渲染到页面上，这是这样一个流程。 首先，渲染流程可以复用，那数据的复用性该怎么做呢？ 恩，猜到了吧，就是使用cache进行一个缓存，然后如果下次获取分页的页码一致的话，就可以直接使用该数据了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">//向后台发请求，获取当前页面的数据</span><br><span class="line">// http.getPage(page);</span><br><span class="line">var pageProxy = (<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">    var cache = &#123;&#125;;</span><br><span class="line">    <span class="built_in">return</span> <span class="keyword">function</span>(fn)&#123;   //fn作为处理页码数据的函数</span><br><span class="line">        var pageData = cache[page];</span><br><span class="line">        <span class="keyword">if</span>(pageData)&#123;</span><br><span class="line">            <span class="built_in">return</span> fn(pageData);  //返回制定页码的数据</span><br><span class="line">        &#125;</span><br><span class="line">        http.getPage(page)   //获取制定页码的数据</span><br><span class="line">        .<span class="keyword">then</span>((data)=&gt;&#123;</span><br><span class="line">            cache[page] = data;  //存放数据</span><br><span class="line">            fn(data);</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+<p>最后再说一句吧，由于代理写起来需要更多的逻辑和代码，如果你的产经没有什么需求的话，不用代理也是行得通的。还有就是，用不用代理和你原来的本体执行的业务逻辑是完全分开的，即，如果后期产经有什么需求，或者你对自己的代码不满意，重构的时候，再添加代理，这种方式也是很推荐的。</p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/06/02/请节约你的请求-代理模式/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/06/08/js中的一对多-订阅发布模式/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          订阅发布模式
+        
+      </div>
+    </a>
   
   
-    </div></section>
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -241,8 +347,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
