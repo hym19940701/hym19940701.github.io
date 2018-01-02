@@ -14,7 +14,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/02/请节约你的请求-代理模式/index.html">
 <meta property="og:site_name" content="我的个人博客">
 <meta property="og:description" content="What’s the proxy pattern?代理模式其实就是将违反单一性原则的类给抽离出来，尽量满足开放和封闭的原则。 相当于一个类的行为只是一种，但是你可以给这个类添加额外的行为。比如: 一个工厂制造伞，你可以给这个工厂设置一个代理，提供订单，运货，淘宝网店等多种行为。当然，里面还有最关键的一点就是，这个代理能把一些骗纸和忽悠都过滤掉，将最真实最直接的订单给工厂，让工厂能够放心的让工人加班">
-<meta property="og:updated_time" content="2018-01-02T08:09:41.938Z">
+<meta property="og:updated_time" content="2018-01-02T09:50:23.687Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="请节约你的请求-代理模式">
 <meta name="twitter:description" content="What’s the proxy pattern?代理模式其实就是将违反单一性原则的类给抽离出来，尽量满足开放和封闭的原则。 相当于一个类的行为只是一种，但是你可以给这个类添加额外的行为。比如: 一个工厂制造伞，你可以给这个工厂设置一个代理，提供订单，运货，淘宝网店等多种行为。当然，里面还有最关键的一点就是，这个代理能把一些骗纸和忽悠都过滤掉，将最真实最直接的订单给工厂，让工厂能够放心的让工人加班">
@@ -80,14 +80,6 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
-		        
 			</div>
 		</nav>
 	</header>		
@@ -121,14 +113,6 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
-			        
 				</div>
 			</nav>
 
@@ -173,7 +157,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="What’s-the-proxy-pattern"><a href="#What’s-the-proxy-pattern" class="headerlink" title="What’s the proxy pattern?"></a>What’s the proxy pattern?</h1><p>代理模式其实就是将违反单一性原则的类给抽离出来，尽量满足开放和封闭的原则。 相当于一个类的行为只是一种，但是你可以给这个类添加额外的行为。比如: 一个工厂制造伞，你可以给这个工厂设置一个代理，提供订单，运货，淘宝网店等多种行为。当然，里面还有最关键的一点就是，这个代理能把一些骗纸和忽悠都过滤掉，将最真实最直接的订单给工厂，让工厂能够放心的让工人加班，顺利的发年终奖. !!!说人话: 就是将你的本体请求，放在代理的怀抱里，让他来帮你挡风挡雨。</p>
+        <h1 id="What’s-the-proxy-pattern"><a href="#What’s-the-proxy-pattern" class="headerlink" title="What’s the proxy pattern?"></a>What’s the proxy pattern?</h1><p>代理模式其实就是将违反单一性原则的类给抽离出来，尽量满足开放和封闭的原则。 相当于一个类的行为只是一种，但是你可以给这个类添加额外的行为。比如: 一个工厂制造伞，你可以给这个工厂设置一个代理，提供订单，运货，淘宝网店等多种行为。当然，里面还有最关键的一点就是，这个代理能把一些骗纸和忽悠都过滤掉，将最真实最直接的订单给工厂，让工厂能够放心的让工人加班，顺利的发年终奖. !!!说人话: 就是将你的本体请求，放在代理的怀抱里，让他来帮你挡风挡雨。<br><a id="more"></a></p>
 <h1 id="图片懒加载"><a href="#图片懒加载" class="headerlink" title="图片懒加载"></a>图片懒加载</h1><p>图片懒加载是指，图片的加载应该在页面全部加载完后，再去加载。这样能够提高加载的速度和网页的体验性。实际操作就是，将原来网页的src独立出来，将原来图片使用一个loading.gif代替，然后在js里面手动创建个img去加载这个src，当加载完后把src替换就可以了。 没有使用代理模式时</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var delayload = (<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">    var img = document.querySelector(<span class="string">"#img"</span>);</span><br><span class="line">    img.src = <span class="string">"loading.gif"</span>;</span><br><span class="line">    var newImg = document.createElement(<span class="string">"img"</span>);</span><br><span class="line">    newImg.onload = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        img.src = newImg.src;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> <span class="keyword">function</span>(src)&#123;</span><br><span class="line">        newImg.src = src;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br><span class="line">window.onload = ()=&gt;&#123;delayload(<span class="string">"jimmy.jpg"</span>)&#125;;</span><br></pre></td></tr></table></figure>
 <p>这样写，我给满分(在没有产经这个生物的前提下). 现在，假设有一个初级产经(还没有进化那种) 她有一个需求: 我不要你的这个loading.gif图片，你换一个。 恩，好没问题。 (不过就是换一下src而已) 她又有一个需求: 你弄一个纯色的背景吧~. MD~ 搞什么，你这样我很为难诶，我逻辑都变了，你让我怎么改。。 在没有使用代理模式的情况下，你的改动应该是:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var delayload = (<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">    var img = document.querySelector(<span class="string">"#img"</span>);</span><br><span class="line">    img.style.backgoundColor=<span class="string">"red"</span>;</span><br><span class="line">    var newImg = document.createElement(<span class="string">"img"</span>);</span><br><span class="line">    newImg.onload = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        img.src = newImg.src;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> <span class="keyword">function</span>(src)&#123;</span><br><span class="line">        newImg.src = src;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure></p>
@@ -415,14 +399,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">2123</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">javscript 设计模式</a>
-              </li>
             
             <div class="clearfix"></div>
           </ul>
